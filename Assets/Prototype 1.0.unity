@@ -7472,6 +7472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257ec811d9b657742952ae16b815f9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlashFX: {fileID: 0}
   Attack_Animation: {fileID: 975241291}
   AttackingSpeed: {fileID: 0}
   timeManager: {fileID: 0}
@@ -8523,6 +8524,83 @@ Transform:
   m_Father: {fileID: 1524845109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1071433123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1178712141}
+    m_Modifications:
+    - target: {fileID: 1744892889613756, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_Name
+      value: FX_Slash_04r
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.06582748
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6172549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20990974
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.75538146
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -21.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -284.221
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230102430478968, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 14.635
+      objectReference: {fileID: 0}
+    - target: {fileID: 198598609680779244, guid: 49ded4ba752fd464f93be1ddf198782e,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198598609680779244, guid: 49ded4ba752fd464f93be1ddf198782e,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198598609680779244, guid: 49ded4ba752fd464f93be1ddf198782e,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198598609680779244, guid: 49ded4ba752fd464f93be1ddf198782e,
+        type: 3}
+      propertyPath: useUnscaledTime
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49ded4ba752fd464f93be1ddf198782e, type: 3}
 --- !u!1 &1072940777
 GameObject:
   m_ObjectHideFlags: 0
@@ -9551,6 +9629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257ec811d9b657742952ae16b815f9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlashFX: {fileID: 1745652965}
   Attack_Animation: {fileID: 1178712140}
   AttackingSpeed: {fileID: 1178712134}
   timeManager: {fileID: 1653746037}
@@ -14458,6 +14537,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4338896859947447421, guid: 4cf1bba7883187440900b55e7411cb97,
     type: 3}
   m_PrefabInstance: {fileID: 1745284163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1745652965 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198598609680779244, guid: 49ded4ba752fd464f93be1ddf198782e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1071433123}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1746987653
 PrefabInstance:

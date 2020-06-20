@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player_Attack : MonoBehaviour
 {
 
+    [SerializeField] ParticleSystem SlashFX = null;
+
     public Animator Attack_Animation;
     private Player_State _PlayerState;
     private PlayerMovement _PlayerMovement;
@@ -48,6 +50,7 @@ public class Player_Attack : MonoBehaviour
             _PlayerMovement.Speed = 0;
             lastClickTime = Time.time;
             clickCount++;
+            SlashFX.Play();
 
             if (clickCount == 1)
             
@@ -57,6 +60,7 @@ public class Player_Attack : MonoBehaviour
                 Attack_Animation.SetBool("FirstSlash", true);
             }
 
+            
             clickCount = Mathf.Clamp(clickCount, 0, 3);
 
         }
